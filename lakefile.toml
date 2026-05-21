@@ -1,21 +1,25 @@
-name = "PCP"
+name = "DiagonaLean"
 version = "0.1.0"
-defaultTargets = ["pcp"]
+defaultTargets = ["Reduction", "PCP", "CFG", "Halt", "pcp"]
 
-
+[[lean_lib]]
+name = "Reduction"
 
 [[lean_lib]]
 name = "PCP"
 
+[[lean_lib]]
+name = "CFG"
+
+[[lean_lib]]
+name = "Halt"
 
 [[require]]
 name = "cslib"
 scope = "leanprover"
 rev = "main"
 
-
 [[lean_exe]]
 name = "pcp"
 root = "Main"
-
 
